@@ -8,9 +8,9 @@ urlpatterns = patterns('',
     # Examples:
     #url(r'^$', 'Project.views.home', name='home'),
     # url(r'^Project/', include('Project.foo.urls')),
-
+(r'^static/(?P<path>.*)$', 'django.views.static.serve',{'document_root': '/opt/bitnami/projects/Project/static'}),
     # Admin interface skin
-    (r'^grappelli/', include('grappelli.urls')),
+   url(r'^grappelli/', include('grappelli.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
