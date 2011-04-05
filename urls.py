@@ -12,6 +12,8 @@ urlpatterns = patterns('',
     # Admin interface skin
    url(r'^grappelli/', include('grappelli.urls')),
 
+   ('', include('rapidsms_xforms.urls')),
+
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
