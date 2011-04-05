@@ -28,7 +28,7 @@ DATABASES = {
         'USER': 'root',                      # Not used with sqlite3.
         'PASSWORD': 'bitnami',                  # Not used with sqlite3.
         'HOST': '127.0.0.1',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -131,6 +131,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
+    'mobile',
 )
 
 # A sample logging configuration. The only tangible logging
