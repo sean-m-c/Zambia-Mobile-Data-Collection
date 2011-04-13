@@ -1,2 +1,22 @@
+# File types #
+##############
 *.pyc
-settings_default.py
+*.swo
+*.swp
+    *.swn
+
+# Directories #
+###############
+logs/
+
+# Specific files #
+##################
+Project/settings_default.py
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+*~
