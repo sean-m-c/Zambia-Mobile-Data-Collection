@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from xforms.models import xform_received
+
 def home(request) :
     return "Here the home page."
 
