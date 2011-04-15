@@ -18,8 +18,8 @@ DATABASES = {
         'NAME': 'main',                      # Or path to database file if using sqlite3.
         'USER': 'root',                      # Not used with sqlite3.
         'PASSWORD': 'bitnami',                  # Not used with sqlite3.
-        'HOST': '127.0.0.1',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -59,7 +59,7 @@ MEDIA_URL = 'http://184.72.227.76/Project/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = '/opt/bitnami/projects/Project/static/'   
+STATIC_ROOT = '/opt/bitnami/projects/Project/static/'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -148,7 +148,7 @@ RAPIDSMS_TABS = [
 
 LOGIN_URL = "/account/login"
 
-XFORMS_HOST = 'http://184.72.227.76/'
+XFORMS_HOST = 'http://184.72.227.76/Project'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
