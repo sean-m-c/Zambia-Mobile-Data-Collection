@@ -123,6 +123,7 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
     'grappelli',
+    'rapidsms',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -133,7 +134,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    'rapidsms',
+    'xforms',
     'eav',
     'uni_form',
     'rapidsms_xforms',
