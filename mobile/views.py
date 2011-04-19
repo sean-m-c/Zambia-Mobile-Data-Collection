@@ -28,3 +28,4 @@ def submission(request) :
     except KeyError:
         HttpResponseServerError("Malformed data!")
     HttpResponse("Got json data")
+    print("View works")
