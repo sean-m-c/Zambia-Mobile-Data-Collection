@@ -123,7 +123,7 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
     'grappelli',
-    'rapidsms',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -134,22 +134,12 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    'xforms',
-    'eav',
-    'uni_form',
-    'rapidsms_xforms',
     'mobile',
     'south',
+    #'xform_manager',
 )
 
-RAPIDSMS_TABS = [
-  ('rapidsms.views.dashboard', 'Dashboard'),
-  ('xforms', 'XForms')
-]
-
 LOGIN_URL = "/account/login"
-
-XFORMS_HOST = 'http://184.72.227.76/Project'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
