@@ -18,8 +18,8 @@ DATABASES = {
         'NAME': 'main',                      # Or path to database file if using sqlite3.
         'USER': 'root',                      # Not used with sqlite3.
         'PASSWORD': 'bitnami',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'HOST': '127.0.0.1',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -148,7 +148,7 @@ RAPIDSMS_TABS = [
 
 LOGIN_URL = "/account/login"
 
-XFORMS_HOST = 'http://184.72.227.76/Project'
+XFORMS_HOST = 'http://184.72.227.76/'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
