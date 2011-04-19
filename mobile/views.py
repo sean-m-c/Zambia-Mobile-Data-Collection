@@ -1,31 +1,29 @@
 from django.http import HttpResponse
-from xforms.models import xform_received
-from django.utils import simplejson
+#from xforms.models import xform_received
+from xml.dom import minidom
+from mobile.models import Person
 
 def home(request) :
     return "Here the home page."
 
 
-# define a listener
-def handle_submission(sender, **args):
-    submission = args['submission']
-    xform = args['xform']
+def parse(request):
 
-    #if xform.keyword == 'survey' && not submission.has_errors:
-      # .. do your own logic here ..
+    #Retrieve xml from the POST
+    xml = request.FILES['xml_submission_file'].read()
 
-# then wire it to the xform_received signal
-    xform_received.connect(handle_submission)
+    #Parse the xml and then grab the values
+    data = minidom.parseString(xml)
 
-def submission(request) :
-    #decoded_json = json.loads(json_string)
-    #return render_to_response('submission.html',{'results':decoded_json['Result']})
+    last_name = data.getElementsByTagName('last_name')[0].firstChild.data
+    #lat/long, altitude, and accuracy are in one string, so split it
+    first_name = data.getElementsByTagName('first_name')[0].firstChild.data.split(" ")
+    gender = data.getElementsByTagName('gender')[0].firstChild.data
 
-    if request.method == 'POST':
-        json_data = simplejson.loads(request.raw_post_data)
-    try:
-        data = json_data['data']
-    except KeyError:
-        HttpResponseServerError("Malformed data!")
-    HttpResponse("Got json data")
-    print("View works")
+
+    #create and save a new result object
+    g = Person(last_name = last_name, first_name = first_name,
+                      gender = gender)
+    g.save()
+
+    return HttpResponse(request)
