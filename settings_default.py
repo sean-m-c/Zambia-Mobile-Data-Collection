@@ -141,11 +141,6 @@ INSTALLED_APPS = (
 
 LOGIN_URL = "/account/login"
 
-<<<<<<< HEAD
-XFORMS_HOST = 'http://184.72.227.76/'
-
-=======
->>>>>>> bd3333dc64ebe3640de5496746ac9bd112157b02
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error.

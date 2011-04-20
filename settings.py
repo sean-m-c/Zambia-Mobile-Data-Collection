@@ -2,7 +2,7 @@ try:
     from settings_default import *
 except ImportError:
     pass
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -32,3 +32,4 @@ STATIC_ROOT = '/users/sclark/project/Project/static/'
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
 STATIC_URL = 'http://127.0.0.1:8000/static/'
+"""
