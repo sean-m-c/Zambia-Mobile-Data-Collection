@@ -1,3 +1,15 @@
+INSERT INTO `mobile_person` VALUES(2, 'Duck', 'Donald', 0);
+INSERT INTO `mobile_person` VALUES(3, 'Mouse', 'Mickey', 0);
+INSERT INTO `mobile_person` VALUES(4, 'Mouse', 'Minnie', 1);
+INSERT INTO `mobile_person` VALUES(5, 'Lima', 'Rick', 0);
+INSERT INTO `mobile_person` VALUES(6, 'Anjos', 'Josiah', 0);
+INSERT INTO `mobile_person` VALUES(7, 'Payne', 'Andrew', 0);
+INSERT INTO `mobile_person` VALUES(8, 'Sharpe', 'Tim', 0);
+INSERT INTO `mobile_person` VALUES(9, 'Takats', 'Ashley', 1);
+INSERT INTO `mobile_person` VALUES(10, 'Clark', 'Sean', 0);
+INSERT INTO `mobile_person` VALUES(11, 'Hood', 'Robin', 0);
+INSERT INTO `mobile_person` VALUES(12, 'Beauty', 'Sleeping', 1);
+
 INSERT INTO `mobile_agerange` VALUES(1, 0, 3);
 INSERT INTO `mobile_agerange` VALUES(2, 4, 7);
 INSERT INTO `mobile_agerange` VALUES(3, 8, 13);
@@ -48,18 +60,6 @@ INSERT INTO `mobile_healthpost` VALUES(4, 'Cave of Wonders', '2011-04-20');
 INSERT INTO `mobile_healthpost` VALUES(5, 'Sherwood Forest', '2011-04-20');
 INSERT INTO `mobile_healthpost` VALUES(6, 'Hogwarts', '2011-04-20');
 INSERT INTO `mobile_healthpost` VALUES(7, 'Sultan''s Palace', '2011-04-20');
-
-INSERT INTO `mobile_person` VALUES(2, 'Duck', 'Donald', 0);
-INSERT INTO `mobile_person` VALUES(3, 'Mouse', 'Mickey', 0);
-INSERT INTO `mobile_person` VALUES(4, 'Mouse', 'Minnie', 1);
-INSERT INTO `mobile_person` VALUES(5, 'Lima', 'Rick', 0);
-INSERT INTO `mobile_person` VALUES(6, 'Anjos', 'Josiah', 0);
-INSERT INTO `mobile_person` VALUES(7, 'Payne', 'Andrew', 0);
-INSERT INTO `mobile_person` VALUES(8, 'Sharpe', 'Tim', 0);
-INSERT INTO `mobile_person` VALUES(9, 'Takats', 'Ashley', 1);
-INSERT INTO `mobile_person` VALUES(10, 'Clark', 'Sean', 0);
-INSERT INTO `mobile_person` VALUES(11, 'Hood', 'Robin', 0);
-INSERT INTO `mobile_person` VALUES(12, 'Beauty', 'Sleeping', 1);
 
 
 INSERT INTO `mobile_submission` VALUES(1, 123, 154, '2011-04-21', 1, '12:34:56:78:90:12', '134.22.57.1');
