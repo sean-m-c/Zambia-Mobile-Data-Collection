@@ -18,7 +18,9 @@ urlpatterns = patterns('',
     # Admin interface skin
     url(r'^grappelli/', include('grappelli.urls')),
 
-    #url(r'^xform_manager/', include('xform_manager.urls')),
+    url(r'^xform_manager/', include('xform_manager.urls')),
+
+    (r'^sentry/', include('sentry.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

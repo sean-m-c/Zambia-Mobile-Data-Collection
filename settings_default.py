@@ -136,7 +136,11 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'mobile',
     'south',
-    #'xform_manager',
+    'xform_manager',
+    'indexer',
+    'paging',
+    'sentry',
+    'sentry.client',
 )
 
 LOGIN_URL = "/account/login"
@@ -163,3 +167,6 @@ LOGGING = {
         },
     }
 }
+
+# For xform_manager
+STRICT = True

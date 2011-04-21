@@ -79,7 +79,12 @@ class AgeRange(models.Model):
 class Person(models.Model):
     last_name = models.CharField(max_length=200)
     first_name = models.CharField(max_length=200, null=True)
-    gender = models.IntegerField(max_length=1)
+
+    GENDER_CHOICES = (
+        (u'0', u'Male'),
+        (u'1', u'Female'),
+    )
+    gender = models.IntegerField(max_length=1, choices=GENDER_CHOICES)
 
     def __unicode__(self):
         return self.first_name + ' ' + self.surname;

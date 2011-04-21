@@ -3,7 +3,7 @@
 *.pyc
 *.swo
 *.swp
-    *.swn
+*.swn
 
 # Directories #
 ###############
@@ -11,7 +11,7 @@ logs/
 
 # Specific files #
 ##################
-Project/settings_default.py
+Project/settings.py
 
 # OS generated files #
 ######################
