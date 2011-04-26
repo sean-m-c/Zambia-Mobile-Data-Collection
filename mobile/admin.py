@@ -1,6 +1,6 @@
 from mobile.models import Country, District, Chief, Village, Submission, HealthPost, AgeRange, Person, BirthForm, DeathForm
 from django.contrib import admin
-
+    
 admin.site.register(Country)
 admin.site.register(District)
 admin.site.register(Chief)
