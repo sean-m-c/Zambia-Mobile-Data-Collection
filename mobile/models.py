@@ -87,7 +87,7 @@ class Person(models.Model):
     gender = models.IntegerField(max_length=1, choices=GENDER_CHOICES)
 
     def __unicode__(self):
-        return self.first_name + ' ' + self.surname;
+        return self.first_name + ' ' + self.last_name;
 
 
 class BirthForm(models.Model):
