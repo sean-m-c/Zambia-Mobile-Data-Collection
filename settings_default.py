@@ -167,6 +167,3 @@ LOGGING = {
         },
     }
 }
-
-# For xform_manager
-STRICT = True
