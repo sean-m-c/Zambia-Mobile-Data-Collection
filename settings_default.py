@@ -2,7 +2,7 @@ import os,sys
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 # Django settings for Project project.
-
+STRICT = True
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
